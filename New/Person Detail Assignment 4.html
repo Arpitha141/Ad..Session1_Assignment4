@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Person Details </title> 
+</head>
+<body>
+
+<h1> Display Name , City and Age of the Person using IIFE. </h1>
+
+<p style="color:red">Please press F12 to view the result</p>
+	<fieldset> 
+		<legend> Person Details </legend>
+		
+		First Name: <input type="text" id="first" /> <br>
+		Last Name: <input type="text" id="second"/> <br> 
+		Age: <input type="text" id="age"> <br> 
+		City: <input type="text" id="city"> <br> 
+	</fieldset>
+
+	<script> 
+	
+	(function(){
+				
+			document.getElementById("first").value = "ABC" ;	
+			document.getElementById("second").value = "R" ;
+			document.getElementById("age").value = "24" ;
+			document.getElementById("city").value = "Bangalore" ;
+			console.log(document.getElementById("first").value);
+			console.log(document.getElementById("second").value);
+			console.log(document.getElementById("age").value);
+			console.log(document.getElementById("city").value);
+			document.write("The name of the Person is <b> ABC </B>. The age is <b> 24 </b>. Lives in <b> Bangalore </b>");
+		})();		
+	</script>
+</body>
+</html>  
